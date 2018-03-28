@@ -4,6 +4,7 @@
         "http://techcrunch.com/feed/", 
         "http://thenextweb.com/feed/", 
         "http://www.wired.com/feed", 
-        "http://mashable.com/feed/"
+        "http://mashable.com/feed/",
+        "https://hackernoon.com/feed/"
     ]
 }
