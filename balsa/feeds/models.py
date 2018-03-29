@@ -1,6 +1,4 @@
-from django.db import models
-
-class NewsFeed(models.Model):
+class NewsFeed(object):
 
     def __init__(self, title, link, description, published_date):
         self.title = title
