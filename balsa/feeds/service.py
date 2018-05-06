@@ -20,9 +20,9 @@ def read_news_feeds(url, categories):
         return False             
     
     feed = feedparser.parse(url)
-    for post in feed.entries:
-          if has_category(post):
-              yield NewsFeed(post.title, post.link, post.description, datetime.fromtimestamp(mktime(post.published_parsed)))
+    for post in feed.entries: 
+        if has_category(post):
+            yield NewsFeed(post.title, post.link, post.description, datetime.fromtimestamp(mktime(post.published_parsed)))
 
 def read_all_news_feeds(categories):
     feed_urls = read_feed_config()
